@@ -75,7 +75,7 @@ public class HomeFragment extends BaseFragment implements View.OnClickListener {
 
         list = new ArrayList<Person>();
         for (int i = 0; i < 20; i++) {
-            list.add(new Person("郝悦"));
+            list.add(new Person("哈哈哈哈哈"));
         }
         MyApterList myApterList = new MyApterList(list, getContext());
         lv.setAdapter(myApterList);
