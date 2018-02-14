@@ -2,10 +2,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    android:background="#cccbcb"
     android:clipToPadding="true"
     android:fitsSystemWindows="true"
-    android:background="#cccbcb"
+    android:orientation="vertical"
     tools:context="com.example.lenovo.roomshulvyou.ui.fragment.OrderFragment">
 
     <!-- TODO: Update blank fragment layout -->
@@ -13,249 +13,280 @@
         android:layout_width="match_parent"
         android:layout_height="300px"
         android:background="#010d2e">
+
         <LinearLayout
+
+            android:id="@+id/ll_xin"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:background="@mipmap/ellipse"
             android:layout_marginLeft="50px"
-            android:id="@+id/ll_xin"
-            android:layout_marginTop="20px">
+            android:layout_marginTop="20px"
+            android:background="@mipmap/ellipse"
+            android:orientation="horizontal">
+
             <ImageView
+                android:id="@+id/im_search"
                 android:layout_width="80px"
                 android:layout_height="50px"
-                android:src="@mipmap/search"
-                android:id="@+id/im_search"/>
+                android:src="@mipmap/top_btn_search" />
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="搜索"
-                android:textSize="40px"/>
+                android:textSize="40px" />
         </LinearLayout>
+
         <ImageView
-            android:layout_width="50px"
-            android:layout_height="50px"
             android:id="@+id/im_xinfen"
-            android:src="@mipmap/top_icon_message"
-            android:layout_toRightOf="@id/ll_xin"
+            android:layout_width="50px"
+            android:layout_height="50px"
             android:layout_marginLeft="20px"
-            android:layout_marginTop="20px"/>
+            android:layout_marginTop="20px"
+            android:layout_toRightOf="@id/ll_xin"
+            android:src="@mipmap/top_icon_message" />
     </RelativeLayout>
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:background="@mipmap/bj"
-    android:layout_marginTop="-180px">
-<RelativeLayout
-    android:layout_width="700px"
-    android:layout_height="wrap_content"
-    android:layout_marginLeft="30px"
-    android:layout_marginTop="40px"
-    android:orientation="horizontal"
-    android:background="@mipmap/list_bg">
-<ImageView
-    android:layout_width="100px"
-    android:layout_height="100px"
-    android:src="@mipmap/btn_schedule"
-    android:layout_centerVertical="true"
-    android:id="@+id/im_order_release"
-    android:layout_marginLeft="30px"/>
-    <View
-        android:id="@+id/vv_views"
-        android:layout_width="8px"
-        android:layout_height="130px"
-        android:background="#9b9a9a"
-        android:layout_toRightOf="@id/im_order_release"
-        android:layout_centerVertical="true"
-        android:layout_marginLeft="30px"/>
+
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_toRightOf="@id/vv_views"
-        android:layout_marginLeft="30px"
-        android:layout_marginTop="20px">
-        <TextView
-            android:layout_width="wrap_content"
+        android:layout_marginTop="-180px"
+        android:background="@mipmap/bj"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="700px"
             android:layout_height="wrap_content"
-            android:text="已发布订单"
-            android:textSize="40px"
-            android:id="@+id/tv_order_release"/>
-        <TextView
-            android:layout_width="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="40px"
+            android:background="@mipmap/list_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/im_order_release"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:src="@mipmap/btn_schedule" />
+
+            <View
+                android:id="@+id/vv_views"
+                android:layout_width="8px"
+                android:layout_height="130px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:layout_toRightOf="@id/im_order_release"
+                android:background="#9b9a9a" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="20px"
+                android:layout_toRightOf="@id/vv_views"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_order_release"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已发布订单"
+                    android:textSize="40px" />
+
+                <TextView
+                    android:id="@+id/tv_order_yy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10px"
+                    android:text="the new schedule of trip"
+                    android:textSize="30px" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/im_back"
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/btn_right_arrow" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="700px"
             android:layout_height="wrap_content"
-            android:text="the new schedule of trip"
-            android:textSize="30px"
-            android:layout_marginTop="10px"
-            android:id="@+id/tv_order_yy"/>
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="40px"
+            android:background="@mipmap/list_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/im_order_signed"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:src="@mipmap/btn_signed" />
+
+            <View
+                android:id="@+id/vv_views1"
+                android:layout_width="8px"
+                android:layout_height="130px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:layout_toRightOf="@id/im_order_signed"
+                android:background="#9b9a9a" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="20px"
+                android:layout_toRightOf="@id/vv_views1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_order_signed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已报名订单"
+                    android:textSize="40px" />
+
+                <TextView
+                    android:id="@+id/tv_order_yy1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10px"
+                    android:text="the signed schedule of trip"
+                    android:textSize="30px" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/im_back1"
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/btn_right_arrow" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="700px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="40px"
+            android:background="@mipmap/list_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/im_order_lightning"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:src="@mipmap/btn_lightning" />
+
+            <View
+                android:id="@+id/vv_views2"
+                android:layout_width="8px"
+                android:layout_height="130px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:layout_toRightOf="@id/im_order_lightning"
+                android:background="#9b9a9a" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="20px"
+                android:layout_toRightOf="@id/vv_views2"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_order_lightning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="抢单订单"
+                    android:textSize="40px" />
+
+                <TextView
+                    android:id="@+id/tv_order_yy2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10px"
+                    android:text="the lightning schedule of trip"
+                    android:textSize="30px" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/im_back2"
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/btn_right_arrow" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="700px"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop="40px"
+            android:background="@mipmap/list_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/im_order_mine"
+                android:layout_width="100px"
+                android:layout_height="100px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:src="@mipmap/btn_mine" />
+
+            <View
+                android:id="@+id/vv_views3"
+                android:layout_width="8px"
+                android:layout_height="130px"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30px"
+                android:layout_toRightOf="@id/im_order_mine"
+                android:background="#9b9a9a" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="20px"
+                android:layout_toRightOf="@id/vv_views3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_order_mine"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="我的订单"
+                    android:textSize="40px" />
+
+                <TextView
+                    android:id="@+id/tv_order_yy3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10px"
+                    android:text="my schedule of trip"
+                    android:textSize="30px" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/im_back3"
+                android:layout_width="50px"
+                android:layout_height="50px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/btn_right_arrow" />
+        </RelativeLayout>
     </LinearLayout>
-    <ImageView
-        android:layout_width="50px"
-        android:layout_height="50px"
-        android:id="@+id/im_back"
-        android:src="@mipmap/btn_right_arrow"
-        android:layout_alignParentRight="true"
-        android:layout_centerVertical="true"/>
-</RelativeLayout>
-
-
-    <RelativeLayout
-        android:layout_width="700px"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30px"
-        android:layout_marginTop="40px"
-        android:orientation="horizontal"
-        android:background="@mipmap/list_bg">
-        <ImageView
-            android:layout_width="100px"
-            android:layout_height="100px"
-            android:src="@mipmap/btn_signed"
-            android:layout_centerVertical="true"
-            android:id="@+id/im_order_signed"
-            android:layout_marginLeft="30px"/>
-        <View
-            android:id="@+id/vv_views1"
-            android:layout_width="8px"
-            android:layout_height="130px"
-            android:background="#9b9a9a"
-            android:layout_toRightOf="@id/im_order_signed"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="30px"/>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_toRightOf="@id/vv_views1"
-            android:layout_marginLeft="30px"
-            android:layout_marginTop="20px">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="已报名订单"
-                android:textSize="40px"
-                android:id="@+id/tv_order_signed"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="the signed schedule of trip"
-                android:textSize="30px"
-                android:layout_marginTop="10px"
-                android:id="@+id/tv_order_yy1"/>
-        </LinearLayout>
-        <ImageView
-            android:layout_width="50px"
-            android:layout_height="50px"
-            android:id="@+id/im_back1"
-            android:src="@mipmap/btn_right_arrow"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"/>
-    </RelativeLayout>
-
-
-    <RelativeLayout
-        android:layout_width="700px"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30px"
-        android:layout_marginTop="40px"
-        android:orientation="horizontal"
-        android:background="@mipmap/list_bg">
-        <ImageView
-            android:layout_width="100px"
-            android:layout_height="100px"
-            android:src="@mipmap/btn_lightning"
-            android:layout_centerVertical="true"
-            android:id="@+id/im_order_lightning"
-            android:layout_marginLeft="30px"/>
-        <View
-            android:id="@+id/vv_views2"
-            android:layout_width="8px"
-            android:layout_height="130px"
-            android:background="#9b9a9a"
-            android:layout_toRightOf="@id/im_order_lightning"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="30px"/>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_toRightOf="@id/vv_views2"
-            android:layout_marginLeft="30px"
-            android:layout_marginTop="20px">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="抢单订单"
-                android:textSize="40px"
-                android:id="@+id/tv_order_lightning"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="the lightning schedule of trip"
-                android:textSize="30px"
-                android:layout_marginTop="10px"
-                android:id="@+id/tv_order_yy2"/>
-        </LinearLayout>
-        <ImageView
-            android:layout_width="50px"
-            android:layout_height="50px"
-            android:id="@+id/im_back2"
-            android:src="@mipmap/btn_right_arrow"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"/>
-    </RelativeLayout>
-
-
-    <RelativeLayout
-        android:layout_width="700px"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30px"
-        android:layout_marginTop="40px"
-        android:orientation="horizontal"
-        android:background="@mipmap/list_bg">
-        <ImageView
-            android:layout_width="100px"
-            android:layout_height="100px"
-            android:src="@mipmap/btn_mine"
-            android:layout_centerVertical="true"
-            android:id="@+id/im_order_mine"
-            android:layout_marginLeft="30px"/>
-        <View
-            android:id="@+id/vv_views3"
-            android:layout_width="8px"
-            android:layout_height="130px"
-            android:background="#9b9a9a"
-            android:layout_toRightOf="@id/im_order_mine"
-            android:layout_centerVertical="true"
-            android:layout_marginLeft="30px"/>
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_toRightOf="@id/vv_views3"
-            android:layout_marginLeft="30px"
-            android:layout_marginTop="20px">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="我的订单"
-                android:textSize="40px"
-                android:id="@+id/tv_order_mine"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="my schedule of trip"
-                android:textSize="30px"
-                android:layout_marginTop="10px"
-                android:id="@+id/tv_order_yy3"/>
-        </LinearLayout>
-        <ImageView
-            android:layout_width="50px"
-            android:layout_height="50px"
-            android:id="@+id/im_back3"
-            android:src="@mipmap/btn_right_arrow"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"/>
-    </RelativeLayout>
-</LinearLayout>
 </LinearLayout>
